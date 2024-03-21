@@ -4,14 +4,14 @@
       <h3>Item List</h3>
       <table>
         <tr>
-          <th>Item</th>
+          <th>Items</th>
           <th>Price</th>
           <th></th>
         </tr>
-          <itemList itemName="GTX 1050TI" :itemPrice="5000" @addCart="addToArray" />
-          <itemList itemName="GTX 1660TI" :itemPrice="15000" @addCart="addToArray" />
-          <itemList itemName="RTX 3090TI" :itemPrice="80000" @addCart="addToArray" />
-          <itemList itemName="RTX 4090TI" :itemPrice="100000" @addCart="addToArray" />
+          <itemList itemName="keyboard" :itemPrice="500" @addCart="addToArray" />
+          <itemList itemName="mouse" :itemPrice="200" @addCart="addToArray" />
+          <itemList itemName="monitor" :itemPrice="2000" @addCart="addToArray" />
+          <itemList itemName="AVR" :itemPrice="700" @addCart="addToArray" />
       </table>
     </div>
     <div class="cart-list">
@@ -26,7 +26,7 @@ import itemList from '@/components/itemList.vue'
 import cartList from '@/components/cartList.vue'
 
 export default {
-  name: 'ShopApp',
+  name: 'shopList',
   components: {
     itemList,
     cartList
